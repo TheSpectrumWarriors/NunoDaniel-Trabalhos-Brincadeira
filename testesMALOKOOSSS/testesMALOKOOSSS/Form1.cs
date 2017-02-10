@@ -37,10 +37,10 @@ namespace testesMALOKOOSSS
         private void buttonTeste_Click(object sender, EventArgs e)
         {
 
+            // Tás a guardar os dados que obtens do DoStuff (um int) num novo int resultado;
+            int resultado = DoStuf(int.Parse(textBoxNumber1.Text), int.Parse(textBoxNumber1.Text));
 
-            DoStuf(int.Parse(textBoxNumber1.Text), int.Parse(textBoxNumber1.Text));
-
-            textBoxTeste.Text = Resultado.ToString;
+            textBoxTeste.Text = resultado.ToString();
         }
     }
 }
