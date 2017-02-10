@@ -36,6 +36,8 @@
             this.textBoxPeso = new System.Windows.Forms.TextBox();
             this.textBoxAltura = new System.Windows.Forms.TextBox();
             this.textBoxIMC = new System.Windows.Forms.TextBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // labelAltura
@@ -52,7 +54,7 @@
             // 
             this.labelPeco.AutoSize = true;
             this.labelPeco.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelPeco.Location = new System.Drawing.Point(45, 25);
+            this.labelPeco.Location = new System.Drawing.Point(45, 37);
             this.labelPeco.Name = "labelPeco";
             this.labelPeco.Size = new System.Drawing.Size(54, 20);
             this.labelPeco.TabIndex = 1;
@@ -70,7 +72,7 @@
             // 
             // buttonCalcular
             // 
-            this.buttonCalcular.Location = new System.Drawing.Point(49, 164);
+            this.buttonCalcular.Location = new System.Drawing.Point(49, 160);
             this.buttonCalcular.Name = "buttonCalcular";
             this.buttonCalcular.Size = new System.Drawing.Size(124, 49);
             this.buttonCalcular.TabIndex = 3;
@@ -100,11 +102,23 @@
             this.textBoxIMC.Size = new System.Drawing.Size(124, 82);
             this.textBoxIMC.TabIndex = 6;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(178, 293);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(44, 40);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 7;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(222, 367);
+            this.ClientSize = new System.Drawing.Size(234, 354);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.textBoxIMC);
             this.Controls.Add(this.textBoxAltura);
             this.Controls.Add(this.textBoxPeso);
@@ -115,6 +129,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "IMC";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -129,6 +144,7 @@
         private System.Windows.Forms.TextBox textBoxPeso;
         private System.Windows.Forms.TextBox textBoxAltura;
         private System.Windows.Forms.TextBox textBoxIMC;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
