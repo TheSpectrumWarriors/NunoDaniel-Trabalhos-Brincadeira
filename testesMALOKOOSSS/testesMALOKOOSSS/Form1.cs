@@ -38,12 +38,13 @@ namespace testesMALOKOOSSS
 
 
         int cont = 0;
+        string[] nomes = new string[10];
 
         private void buttonAdicionarNomes_Click(object sender, EventArgs e)
         {
             // Eu queria tipo, escrevia um nome e adiciova e deveria aparecer na lista em baixo o nome que eu escrevi
             // Depois queria adicionar segundo nome e adcionar, e em baxi paarecerem dois nomes
-            string[] nomes = new string[10];
+           
 
             nomes[cont] = textBoxNomes.Text;
 
