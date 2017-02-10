@@ -33,6 +33,11 @@
             this.textBoxNumber1 = new System.Windows.Forms.TextBox();
             this.textBoxNumber2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.panelSoma = new System.Windows.Forms.Panel();
+            this.textBoxListaNomes = new System.Windows.Forms.TextBox();
+            this.textBoxNomes = new System.Windows.Forms.TextBox();
+            this.buttonAdicionarNomes = new System.Windows.Forms.Button();
+            this.panelSoma.SuspendLayout();
             this.SuspendLayout();
             // 
             // textBoxTeste
@@ -43,6 +48,7 @@
             this.textBoxTeste.ReadOnly = true;
             this.textBoxTeste.Size = new System.Drawing.Size(89, 27);
             this.textBoxTeste.TabIndex = 0;
+            this.textBoxTeste.TabStop = false;
             // 
             // buttonSomar
             // 
@@ -77,18 +83,56 @@
             this.label1.TabIndex = 4;
             this.label1.Text = "+";
             // 
+            // panelSoma
+            // 
+            this.panelSoma.Controls.Add(this.label1);
+            this.panelSoma.Controls.Add(this.textBoxNumber2);
+            this.panelSoma.Controls.Add(this.textBoxNumber1);
+            this.panelSoma.Controls.Add(this.buttonSomar);
+            this.panelSoma.Controls.Add(this.textBoxTeste);
+            this.panelSoma.Location = new System.Drawing.Point(0, 0);
+            this.panelSoma.Name = "panelSoma";
+            this.panelSoma.Size = new System.Drawing.Size(113, 106);
+            this.panelSoma.TabIndex = 6;
+            // 
+            // textBoxListaNomes
+            // 
+            this.textBoxListaNomes.Location = new System.Drawing.Point(128, 42);
+            this.textBoxListaNomes.Multiline = true;
+            this.textBoxListaNomes.Name = "textBoxListaNomes";
+            this.textBoxListaNomes.Size = new System.Drawing.Size(119, 201);
+            this.textBoxListaNomes.TabIndex = 7;
+            // 
+            // textBoxNomes
+            // 
+            this.textBoxNomes.Location = new System.Drawing.Point(128, 12);
+            this.textBoxNomes.Name = "textBoxNomes";
+            this.textBoxNomes.Size = new System.Drawing.Size(79, 20);
+            this.textBoxNomes.TabIndex = 8;
+            // 
+            // buttonAdicionarNomes
+            // 
+            this.buttonAdicionarNomes.Location = new System.Drawing.Point(213, 10);
+            this.buttonAdicionarNomes.Name = "buttonAdicionarNomes";
+            this.buttonAdicionarNomes.Size = new System.Drawing.Size(34, 23);
+            this.buttonAdicionarNomes.TabIndex = 9;
+            this.buttonAdicionarNomes.Text = "Add";
+            this.buttonAdicionarNomes.UseVisualStyleBackColor = true;
+            this.buttonAdicionarNomes.Click += new System.EventHandler(this.buttonAdicionarNomes_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(503, 308);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBoxNumber2);
-            this.Controls.Add(this.textBoxNumber1);
-            this.Controls.Add(this.buttonSomar);
-            this.Controls.Add(this.textBoxTeste);
+            this.Controls.Add(this.buttonAdicionarNomes);
+            this.Controls.Add(this.textBoxNomes);
+            this.Controls.Add(this.textBoxListaNomes);
+            this.Controls.Add(this.panelSoma);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.panelSoma.ResumeLayout(false);
+            this.panelSoma.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +145,10 @@
         private System.Windows.Forms.TextBox textBoxNumber1;
         private System.Windows.Forms.TextBox textBoxNumber2;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Panel panelSoma;
+        private System.Windows.Forms.TextBox textBoxListaNomes;
+        private System.Windows.Forms.TextBox textBoxNomes;
+        private System.Windows.Forms.Button buttonAdicionarNomes;
     }
 }
 

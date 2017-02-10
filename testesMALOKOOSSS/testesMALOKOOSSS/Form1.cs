@@ -35,5 +35,29 @@ namespace testesMALOKOOSSS
 
             textBoxTeste.Text = resultado.ToString();
         }
+
+
+       
+
+        private void buttonAdicionarNomes_Click(object sender, EventArgs e)
+        {
+
+            int cont = 1;
+
+
+
+            string[] nomes = new string[10];
+
+            nomes[cont] = textBoxNomes.Text;
+
+            textBoxNomes.Text = "";
+            cont = cont + 1;
+
+            for (int i = 0; i < cont; i++)
+            { 
+                 textBoxListaNomes.Text = nomes[i] + Environment.NewLine;
+            }
+            
+        }
     }
 }
