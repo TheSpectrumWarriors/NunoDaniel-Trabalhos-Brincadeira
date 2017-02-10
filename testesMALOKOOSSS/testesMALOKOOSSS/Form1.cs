@@ -19,13 +19,13 @@ namespace testesMALOKOOSSS
 
 
 
-        public int DoStuf(int Number1, int Number2)
+        private int DoStuf(int Number1, int Number2)
         {
            
 
-            int Resultado;
+            
 
-             Resultado = Number1 + Number2;
+            int  Resultado = Number1 + Number2;
 
             return Resultado;
 

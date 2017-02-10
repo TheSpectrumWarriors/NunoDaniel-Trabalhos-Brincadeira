@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.textBoxTeste = new System.Windows.Forms.TextBox();
-            this.buttonTeste = new System.Windows.Forms.Button();
+            this.buttonSomar = new System.Windows.Forms.Button();
             this.textBoxNumber1 = new System.Windows.Forms.TextBox();
             this.textBoxNumber2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -37,41 +37,41 @@
             // 
             // textBoxTeste
             // 
-            this.textBoxTeste.Location = new System.Drawing.Point(49, 163);
+            this.textBoxTeste.Location = new System.Drawing.Point(12, 68);
             this.textBoxTeste.Multiline = true;
             this.textBoxTeste.Name = "textBoxTeste";
             this.textBoxTeste.ReadOnly = true;
-            this.textBoxTeste.Size = new System.Drawing.Size(192, 63);
+            this.textBoxTeste.Size = new System.Drawing.Size(89, 27);
             this.textBoxTeste.TabIndex = 0;
             // 
-            // buttonTeste
+            // buttonSomar
             // 
-            this.buttonTeste.Location = new System.Drawing.Point(100, 100);
-            this.buttonTeste.Name = "buttonTeste";
-            this.buttonTeste.Size = new System.Drawing.Size(94, 32);
-            this.buttonTeste.TabIndex = 1;
-            this.buttonTeste.Text = "Testar";
-            this.buttonTeste.UseVisualStyleBackColor = true;
-            this.buttonTeste.Click += new System.EventHandler(this.buttonTeste_Click);
+            this.buttonSomar.Location = new System.Drawing.Point(12, 38);
+            this.buttonSomar.Name = "buttonSomar";
+            this.buttonSomar.Size = new System.Drawing.Size(89, 24);
+            this.buttonSomar.TabIndex = 1;
+            this.buttonSomar.Text = "Somar";
+            this.buttonSomar.UseVisualStyleBackColor = true;
+            this.buttonSomar.Click += new System.EventHandler(this.buttonTeste_Click);
             // 
             // textBoxNumber1
             // 
-            this.textBoxNumber1.Location = new System.Drawing.Point(30, 56);
+            this.textBoxNumber1.Location = new System.Drawing.Point(12, 12);
             this.textBoxNumber1.Name = "textBoxNumber1";
-            this.textBoxNumber1.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumber1.Size = new System.Drawing.Size(32, 20);
             this.textBoxNumber1.TabIndex = 2;
             // 
             // textBoxNumber2
             // 
-            this.textBoxNumber2.Location = new System.Drawing.Point(155, 56);
+            this.textBoxNumber2.Location = new System.Drawing.Point(69, 12);
             this.textBoxNumber2.Name = "textBoxNumber2";
-            this.textBoxNumber2.Size = new System.Drawing.Size(100, 20);
+            this.textBoxNumber2.Size = new System.Drawing.Size(32, 20);
             this.textBoxNumber2.TabIndex = 3;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(136, 59);
+            this.label1.Location = new System.Drawing.Point(50, 15);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(13, 13);
             this.label1.TabIndex = 4;
@@ -81,11 +81,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
+            this.ClientSize = new System.Drawing.Size(503, 308);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxNumber2);
             this.Controls.Add(this.textBoxNumber1);
-            this.Controls.Add(this.buttonTeste);
+            this.Controls.Add(this.buttonSomar);
             this.Controls.Add(this.textBoxTeste);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -97,7 +97,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox textBoxTeste;
-        private System.Windows.Forms.Button buttonTeste;
+        private System.Windows.Forms.Button buttonSomar;
         private System.Windows.Forms.TextBox textBoxNumber1;
         private System.Windows.Forms.TextBox textBoxNumber2;
         private System.Windows.Forms.Label label1;
