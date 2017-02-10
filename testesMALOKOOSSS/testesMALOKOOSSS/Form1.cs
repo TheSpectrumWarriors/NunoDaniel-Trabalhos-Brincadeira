@@ -19,7 +19,18 @@ namespace testesMALOKOOSSS
 
 
 
+        public int DoStuf(int Number1, int Number2)
+        {
+           
 
+            int Resultado;
+
+             Resultado = Number1 + Number2;
+
+            return Resultado;
+
+
+        }
 
 
 
@@ -27,7 +38,9 @@ namespace testesMALOKOOSSS
         {
 
 
-            textBoxTeste.Text = "OLA PEARL TRUST";
+            DoStuf(int.Parse(textBoxNumber1.Text), int.Parse(textBoxNumber1.Text));
+
+            textBoxTeste.Text = Resultado.ToString;
         }
     }
 }
