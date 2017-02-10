@@ -44,18 +44,33 @@ namespace testesMALOKOOSSS
         {
             // Eu queria tipo, escrevia um nome e adiciova e deveria aparecer na lista em baixo o nome que eu escrevi
             // Depois queria adicionar segundo nome e adcionar, e em baxi paarecerem dois nomes
-           
 
+            string passado;
             nomes[cont] = textBoxNomes.Text;
+
+            passado = textBoxListaNomes.Text;
 
             textBoxNomes.Text = "";
             cont = cont + 1;
 
+            textBoxListaNomes.Text = "";
             for (int i = 0; i < cont; i++)
-            { 
-                 textBoxListaNomes.Text = nomes[i] + Environment.NewLine;
+            {
+                textBoxListaNomes.Text = passado + nomes[i] + Environment.NewLine;
             }
-            
+
+
+            textBoxNomes.Focus();
+
+
+            if (cont >= 10)
+                {
+                buttonAdicionarNomes.Visible = false;
+                textBoxNomes.Visible = false;
+
+
+                }
+
         }
     }
 }
