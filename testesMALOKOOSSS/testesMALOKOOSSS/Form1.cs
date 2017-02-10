@@ -18,27 +18,20 @@ namespace testesMALOKOOSSS
         }
 
 
-
         private int DoStuf(int Number1, int Number2)
         {
            
-
-            
-
             int  Resultado = Number1 + Number2;
-
             return Resultado;
 
-
         }
-
 
 
         private void buttonTeste_Click(object sender, EventArgs e)
         {
 
             // Tás a guardar os dados que obtens do DoStuff (um int) num novo int resultado;
-            int resultado = DoStuf(int.Parse(textBoxNumber1.Text), int.Parse(textBoxNumber1.Text));
+            int resultado = DoStuf(int.Parse(textBoxNumber1.Text), int.Parse(textBoxNumber2.Text));
 
             textBoxTeste.Text = resultado.ToString();
         }
