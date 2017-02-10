@@ -15,6 +15,31 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+
+
+         
+
+
+        }
+
+        private void buttonCalcular_Click(object sender, EventArgs e)
+        {
+
+
+            float peso;
+            float altura;
+            float imc;
+
+            peso = float.Parse(textBoxPeso.Text);
+            altura = float.Parse(textBoxAltura.Text);
+
+
+            imc = peso / (altura * altura);
+
+            textBoxIMC.Text = imc.ToString();
+
+
+
         }
     }
 }

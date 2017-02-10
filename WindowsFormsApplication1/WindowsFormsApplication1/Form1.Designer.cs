@@ -35,7 +35,7 @@
             this.buttonCalcular = new System.Windows.Forms.Button();
             this.textBoxPeso = new System.Windows.Forms.TextBox();
             this.textBoxAltura = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBoxIMC = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // labelAltura
@@ -76,6 +76,7 @@
             this.buttonCalcular.TabIndex = 3;
             this.buttonCalcular.Text = "Calcular";
             this.buttonCalcular.UseVisualStyleBackColor = true;
+            this.buttonCalcular.Click += new System.EventHandler(this.buttonCalcular_Click);
             // 
             // textBoxPeso
             // 
@@ -91,20 +92,20 @@
             this.textBoxAltura.Size = new System.Drawing.Size(124, 20);
             this.textBoxAltura.TabIndex = 5;
             // 
-            // textBox3
+            // textBoxIMC
             // 
-            this.textBox3.Location = new System.Drawing.Point(49, 251);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(124, 82);
-            this.textBox3.TabIndex = 6;
+            this.textBoxIMC.Location = new System.Drawing.Point(49, 251);
+            this.textBoxIMC.Multiline = true;
+            this.textBoxIMC.Name = "textBoxIMC";
+            this.textBoxIMC.Size = new System.Drawing.Size(124, 82);
+            this.textBoxIMC.TabIndex = 6;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(222, 367);
-            this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.textBoxIMC);
             this.Controls.Add(this.textBoxAltura);
             this.Controls.Add(this.textBoxPeso);
             this.Controls.Add(this.buttonCalcular);
@@ -127,7 +128,7 @@
         private System.Windows.Forms.Button buttonCalcular;
         private System.Windows.Forms.TextBox textBoxPeso;
         private System.Windows.Forms.TextBox textBoxAltura;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBoxIMC;
     }
 }
 
