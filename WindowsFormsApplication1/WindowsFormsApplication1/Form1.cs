@@ -36,9 +36,31 @@ namespace WindowsFormsApplication1
 
             imc = peso / (altura * altura);
 
-            textBoxIMC.Text = imc.ToString();
+
+            if (imc<= 18.5 )
+            {
+
+                textBoxIMC.ForeColor = Color.Red;
+                textBoxIMC.Text = imc.ToString() + Environment.NewLine + "Peso Abaixo"+Environment.NewLine +"Come RAPAZ!";
 
 
+            }
+            else if (imc >= 25)
+            {
+
+                textBoxIMC.ForeColor = Color.Red;
+                textBoxIMC.Text = imc.ToString() + Environment.NewLine + "Peso Acima" + Environment.NewLine + "Não comas RAPAZ!";
+
+
+            }
+            else
+            {
+
+                textBoxIMC.ForeColor = Color.Green;
+                textBoxIMC.Text = imc.ToString() + Environment.NewLine + "Peso Ideal" + Environment.NewLine + "Bem jogado RAPAZ!";
+
+
+            }
 
         }
     }
